@@ -1,0 +1,79 @@
+body {
+    background-color: #FAF9FE;
+}
+
+.titulo-nova-tarefa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-nova-tarefa {
+    margin-left: 88px;
+}
+
+/* formulario */
+
+.formulario-nova-tarefa, .dicas-tarefa {
+    background-color: #FEFEFE;
+    border-radius: 8px;
+    border: 1px solid #EBEDF4;
+    padding: 28px;
+}
+
+.titulo-principal-form {
+    padding-bottom: 24px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
+fieldset,
+input,
+select {
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+select {
+    border-radius: 4px;
+    border: 1px solid #EBEDF4;
+    height: 33px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+}
+.main-form{
+    width: 70%;
+}
+section {
+  display: flex;
+  flex: 1;
+  gap: 2.25rem;
+  padding-bottom: 2rem;
+}
+
+/* aside */
+
+
+.dicas{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.dica-conteudo{
+    margin-left: 16px;
+}
+
+h4 {
+    padding-bottom: 8px;
+}

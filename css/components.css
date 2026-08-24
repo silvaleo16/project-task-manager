@@ -27,7 +27,7 @@ a{
     color: black;
 }
 
-.nova-tarefa {
+.btn-nova-tarefa {
     justify-self: end;
     display: inline-flex;
     align-items: center;
