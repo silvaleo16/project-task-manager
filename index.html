@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto-maneger</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/index.css" />
 </head>
 <body>
     <header class="cabecalho-principal">
         <div class="logo">
-            <span class="icon">&#10003;</span>
-            <h1>DevTasks</h1>
+            <img src="../assets/icons/logo.png" alt="logo Dev task">
         </div>
 
         <nav class="menu-navegacao">
-            <ul>
-                <li class="item-link"><a href="#" class="home">Home</a></li>
-                <li class="item-link"><a href="#" class="tarefas">Tarefas</a></li>
+            <ul class="lista-links">
+                <li class="item-link"><a href="../index.html" class="home">Home</a></li>
+                <li class="item-link"><a href="/pages/tarefas.html" class="tarefas">Tarefas</a></li>
                 <li class="item-link"><a href="#" class="sobre">Sobre</a></li>
                 <li class="item-link"><a href="#" class="contato">Contato</a></li>
-            </ul>  
+            </ul>
+            
         </nav>
         <button class="nova-tarefa">+ Nova tarefa</button>
 
@@ -37,7 +39,7 @@
             <span class="badge">Privado e seguro</span>
         </div>
 
-        <img src="./assets/imagens/computador-tarefas.jpg" alt="Interface Minhas Tarefas no Laptop">
+        <img src="./assets/images/computador-tarefas.jpg" alt="Interface Minhas Tarefas no Laptop">
 
         <h3>Funcionalidades que facilitam seu dia</h3>
 
@@ -73,48 +75,10 @@
                     <span>Concentre-se ea realize suas atividades</span>
                 </div>
             </div>
-
-        <div class="caixa-email">
-            <h4>Pronto para ser mais produtivo?</h4>
-            <h6>Junte-se ao DevTasks e transforme sua rotina</h6>
-            <form>
-                <input type="email" placeholder="Seu e-mail (opcional)">
-                <button type="submit">Quero começar</button>
-            </form>
-        </div>
-        
     </main>
 
-    <footer class="rodape">
-        <span>
-            <h3>DevTasks</h3>
-            <div>Um projeto de estudo para pratica de HTML, CSS e JavaScript com foco em organização e produtividade</div>
-        </span>
-        <span>
-            <h3>Navegação</h3>
-            <div>Home</div>
-            <div>Tarefas</div>
-            <div>Sobre</div>
-            <div>Contato</div>
-        </span>
-        <span>
-            <h3>Recursos</h3>
-            <div>Funcionalidades</div>
-            <div>Como funciona</div>
-            <div>FAQ</div>
-            <div>Dicas de produtividade</div>
-        </span>
-        <span>
-            <h3>Legal</h3>
-            <div>Privacidade</div>
-            <div>Termos de uso</div>
-            <div>Licença</div>
-        </span>
-        <div>
-            <span>Feito com ❤️ por dois desenvolvedores</span>
-            <div>Ver projeto no GitHub</div>
-        </div>
+    <footer>
+        
     </footer>
-
 </body>
 </html>
