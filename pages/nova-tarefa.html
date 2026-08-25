@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/components.css" />
-    
+    <link rel="stylesheet" href="../css/nova-tarefa.css" />
+
     <title>Nova Tarefa</title>
 </head>
+
 <body>
     <header class="cabecalho-principal">
         <div class="logo">
@@ -21,10 +24,110 @@
                 <li class="item-link"><a href="#" class="sobre">Sobre</a></li>
                 <li class="item-link"><a href="#" class="contato">Contato</a></li>
             </ul>
-            
+
         </nav>
-        <a class="nova-tarefa" href="nova-tarefa.html" >+ Nova tarefa</a>
+        <a class="btn-nova-tarefa" href="nova-tarefa.html">+ Nova tarefa</a>
 
     </header>
+    <div class="breadcrumb"><a href="./tarefas.html">Tarefas</a> > Nova Tarefa</div>
+    <main class="conteudo-nova-tarefa">
+        <section>
+            <div class="main-form">
+                <div class="titulo-nova-tarefa">
+                    <div>
+                        <h1>Nova Tarefa</h1>
+                        <span>Preencha os dados abaixo para cria uma nova tarefa e organizá-la</span>
+                    </div>
+                    <img src="../assets/images/prancheta.png" alt="" height="100px" width="150px" />
+                </div>
+                <form class="formulario-nova-tarefa">
+                    <h2 class="titulo-principal-form">Informações da tarefa</h2>
+                    <fieldset>
+                        <label for="titulo-da-tarefa">Titulo da tarefa</label>
+                        <input type="text" name="titulo-da-tarefa" id="titulo-da-tarefa"
+                            placeholder="Ex.: Estudar JavaScript" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="descricao">Descrição</label>
+                        <input type="text" name="descricao" id="descricao"
+                            placeholder="Descreva os detalhes da tarefa.">
+                    </fieldset>
+                    <div class="input-row">
+                        <fieldset>
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" name="categoria" required>
+                                <option value disabled selected hidden>Selecione uma categoria</option>
+                                <option value="Teste1">Teste1</option>
+                                <option value="Teste2">Teste2</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="prioridade">Prioridade</label>
+                            <select id="prioridade" name="prioridade">
+                                <option value="prioridade-baixa">Baixa</option>
+                                <option value="prioridade-media">Média</option>
+                                <option value="prioridade-alta">Alta</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="input-row">
+                        <fieldset>
+                            <label for="data-tarefa">Data de vencimento</label>
+                            <input type="date" name="data-tarefa" id="data-tarefa" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="tempo-estimado">Tempo estimado (opcional)</label>
+                            <input type="text" id="tempo-estimado" name="tempo-estimado" placeholder="Ex.: 2h, 30m, 1d">
+                        </fieldset>
+                    </div>
+                    <fieldset>s
+                        <label for="tag-tarefa">Tags (opcional)</label>
+                        <input type="text" name="tag-tarefa" id="tag-tarefa"
+                            placeholder="digite e precione Enter para adicionar">
+                    </fieldset>
+                    <span>Use tags para organizar e econtrar suas tarefas com mais facilidade</span>
+                </form>
+                <div class="btn-formulario">
+                    <button>Cancelar</button>
+                    <button>Salvar rascunho</button>
+                    <button>Criar tarefa</button>
+                </div>
+            </div>
+            <aside>
+                <div class="dicas-tarefa">
+                    <header><h3>Dicas para uma boa tarefa</h3></header>
+                        <div class="dicas">
+                            <img src="../assets/icons/alvo.png" alt="">
+                            <div class="dica-conteudo">
+                                <h4>Seja especifico</h4>
+                                <span>Tarefas claras são mais fáceis de entender e executar.</span>
+                            </div>
+                        </div>
+                        <div class="dicas">
+                            <img src="../assets/icons/to-do.png" alt="">
+                            <div class="dica-conteudo">
+                                <h4>Defina prioridade</h4>
+                                <span>Priorize o que realmente importa e foque no essencial.</span>
+                            </div>
+                        </div>
+                        <div class="dicas">
+                            <img src="../assets/icons/calendario.png" alt="">
+                            <div class="dica-conteudo">
+                                <h4>Estime o tempo</h4>
+                                <span>Estimativas ajudam no planejamento do seu dia.</span>
+                            </div>
+                        </div>
+                        <div class="dicas">
+                            <img src="../assets/icons/tag.png" alt="">
+                            <div class="dica-conteudo">
+                                <h4>Use categorias e tags</h4>
+                                <span>Organize para encontrar e filtrar suas tarefas rapidamente.</span>
+                            </div>
+                        </div>
+                </div>
+            </aside>
+        </section>
+    </main>
 </body>
+
 </html>
