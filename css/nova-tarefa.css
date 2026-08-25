@@ -16,7 +16,8 @@ body {
 
 .formulario-nova-tarefa,
 .dicas-tarefa,
-.atalhos-teclado {
+.atalhos-teclado,
+.btn-formulario {
     background-color: #FEFEFE;
     border-radius: 8px;
     border: 1px solid #EBEDF4;
@@ -35,7 +36,7 @@ fieldset {
 fieldset,
 input,
 select {
-    min-width: 300px;
+    min-width: 200px;
     max-width: 700px;
 }
 
@@ -67,6 +68,28 @@ section {
     padding-bottom: 2rem;
 }
 
+.btn-formulario {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 14px;
+    padding: 14px 28px;
+    background-color: #F7F8FC;
+    border-radius: 0px 0px 8px 8px;
+    position: relative;
+    top: -4px;
+    z-index: -1;
+
+    :first-child {
+        width: 80px;
+        border: none;
+    }
+
+    button {
+        height: 34px;
+        width: 150px;
+    }
+}
+
 /* aside */
 
 
@@ -84,11 +107,11 @@ h4 {
 }
 
 /* atalhos */
-.atalhos-teclado{
+.atalhos-teclado {
     margin-top: 18px;
 }
 
-.atalhos-teclado > header {
+.atalhos-teclado>header {
     margin-bottom: 28px;
 }
 
