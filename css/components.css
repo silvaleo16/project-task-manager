@@ -40,5 +40,12 @@ a{
     cursor: pointer;
 }
 
-
+/* breadcrum */
+.breadcrumb {
+    padding: 24px 88px;
+}
+.breadcrumb a{
+    color: #4E33DD;
+    font-weight: 600;
+}
 

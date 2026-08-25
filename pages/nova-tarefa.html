@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/nova-tarefa.css" />
 
-    <title>Nova Tarefa</title>
+    <title>Nova Tarefa</title>  
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                         <h1>Nova Tarefa</h1>
                         <span>Preencha os dados abaixo para cria uma nova tarefa e organizá-la</span>
                     </div>
-                    <img src="../assets/images/prancheta.png" alt="" height="100px" width="150px" />
+                    <img src="../assets/images/prancheta.png" alt="" height="156px" width="250px" />
                 </div>
                 <form class="formulario-nova-tarefa">
                     <h2 class="titulo-principal-form">Informações da tarefa</h2>
@@ -80,7 +80,7 @@
                             <input type="text" id="tempo-estimado" name="tempo-estimado" placeholder="Ex.: 2h, 30m, 1d">
                         </fieldset>
                     </div>
-                    <fieldset>s
+                    <fieldset>
                         <label for="tag-tarefa">Tags (opcional)</label>
                         <input type="text" name="tag-tarefa" id="tag-tarefa"
                             placeholder="digite e precione Enter para adicionar">
@@ -95,35 +95,72 @@
             </div>
             <aside>
                 <div class="dicas-tarefa">
-                    <header><h3>Dicas para uma boa tarefa</h3></header>
-                        <div class="dicas">
-                            <img src="../assets/icons/alvo.png" alt="">
-                            <div class="dica-conteudo">
-                                <h4>Seja especifico</h4>
-                                <span>Tarefas claras são mais fáceis de entender e executar.</span>
-                            </div>
+                    <header>
+                        <h3>Dicas para uma boa tarefa</h3>
+                    </header>
+                    <div class="dicas">
+                        <img src="../assets/icons/alvo.png" alt="">
+                        <div class="dica-conteudo">
+                            <h4>Seja especifico</h4>
+                            <span>Tarefas claras são mais fáceis de entender e executar.</span>
                         </div>
-                        <div class="dicas">
-                            <img src="../assets/icons/to-do.png" alt="">
-                            <div class="dica-conteudo">
-                                <h4>Defina prioridade</h4>
-                                <span>Priorize o que realmente importa e foque no essencial.</span>
-                            </div>
+                    </div>
+                    <div class="dicas">
+                        <img src="../assets/icons/to-do.png" alt="">
+                        <div class="dica-conteudo">
+                            <h4>Defina prioridade</h4>
+                            <span>Priorize o que realmente importa e foque no essencial.</span>
                         </div>
-                        <div class="dicas">
-                            <img src="../assets/icons/calendario.png" alt="">
-                            <div class="dica-conteudo">
-                                <h4>Estime o tempo</h4>
-                                <span>Estimativas ajudam no planejamento do seu dia.</span>
-                            </div>
+                    </div>
+                    <div class="dicas">
+                        <img src="../assets/icons/calendario.png" alt="">
+                        <div class="dica-conteudo">
+                            <h4>Estime o tempo</h4>
+                            <span>Estimativas ajudam no planejamento do seu dia.</span>
                         </div>
-                        <div class="dicas">
-                            <img src="../assets/icons/tag.png" alt="">
-                            <div class="dica-conteudo">
-                                <h4>Use categorias e tags</h4>
-                                <span>Organize para encontrar e filtrar suas tarefas rapidamente.</span>
-                            </div>
+                    </div>
+                    <div class="dicas">
+                        <img src="../assets/icons/tag.png" alt="">
+                        <div class="dica-conteudo">
+                            <h4>Use categorias e tags</h4>
+                            <span>Organize para encontrar e filtrar suas tarefas rapidamente.</span>
                         </div>
+                    </div>
+                </div>
+                <div class="atalhos-teclado">
+                    <header>
+                        <h3>atalhos de teclado</h3>
+                    </header>
+                    <div class="atalho-conteudo">
+                        <button class="atalho-criar-tarefa" type="button"
+                            aria-label="Criar nova tarefa. Atalho Ctrl mais Enter">
+                            <span>
+                                <kbd class="atalho-tecla">Ctrl</kbd><span>+</span><kbd class="atalho-tecla">Enter</kbd>
+                            </span> </button>
+                        <span class="atalho-texto">Criar tarefa</span>
+                    </div>
+                    <div class="atalho-conteudo">
+                        <button class="atalho-criar-tarefa" type="button"
+                            aria-label="Salvar rascunho. Atalho Ctrl mais S">
+                            <span>
+                                <kbd class="atalho-tecla">Ctrl</kbd><span>+</span><kbd class="atalho-tecla">S</kbd>
+                            </span> </button>
+                        <span class="atalho-texto">Salvar rascunho</span>
+                    </div>
+                    <div class="atalho-conteudo">
+                        <button class="atalho-criar-tarefa" type="button" aria-label="Cancelar edição. Atalho Esc">
+                            <span>
+                                <kbd class="atalho-tecla">Esc</kbd>
+                            </span> </button>
+                        <span class="atalho-texto">Cancelar edição</span>
+                    </div>
+                                        <div class="atalho-conteudo">
+                        <button class="atalho-criar-tarefa" type="button" aria-label="Focar no titulo. Atalho /">
+                            <span>
+                                <kbd class="atalho-tecla">/</kbd>
+                            </span> </button>
+                        <span class="atalho-texto">Focar no titulo</span>
+                    </div>
                 </div>
             </aside>
         </section>

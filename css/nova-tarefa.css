@@ -2,6 +2,7 @@ body {
     background-color: #FAF9FE;
 }
 
+
 .titulo-nova-tarefa {
     display: flex;
     justify-content: space-between;
@@ -13,7 +14,9 @@ body {
 
 /* formulario */
 
-.formulario-nova-tarefa, .dicas-tarefa {
+.formulario-nova-tarefa,
+.dicas-tarefa,
+.atalhos-teclado {
     background-color: #FEFEFE;
     border-radius: 8px;
     border: 1px solid #EBEDF4;
@@ -52,28 +55,60 @@ label {
     display: block;
     margin-bottom: 12px;
 }
-.main-form{
+
+.main-form {
     width: 70%;
 }
+
 section {
-  display: flex;
-  flex: 1;
-  gap: 2.25rem;
-  padding-bottom: 2rem;
+    display: flex;
+    flex: 1;
+    gap: 2.25rem;
+    padding-bottom: 2rem;
 }
 
 /* aside */
 
 
-.dicas{
+.dicas {
     display: flex;
     padding: 20px 0px;
 }
 
-.dica-conteudo{
+.dica-conteudo {
     margin-left: 16px;
 }
 
 h4 {
     padding-bottom: 8px;
+}
+
+/* atalhos */
+.atalhos-teclado{
+    margin-top: 18px;
+}
+
+.atalhos-teclado > header {
+    margin-bottom: 28px;
+}
+
+.atalho-criar-tarefa {
+    border: none;
+    background: transparent;
+}
+
+.atalho-conteudo {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    align-items: center;
+    padding-bottom: 28px;
+    gap: 170px;
+}
+
+.atalho-tecla {
+    padding: 8px;
+    background-color: #F2F1FD;
+    border-radius: 4px;
+    color: #3E24E7;
+    font-weight: 600;
 }
