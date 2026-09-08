@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto-maneger</title>
-    <link rel="stylesheet" href="/css/reset.css"/>
-    <link rel="stylesheet" href="/css/variables.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
     <header class="cabecalho-principal">
         <div class="logo">
@@ -21,90 +23,205 @@
                 <li class="item-link"><a href="#" class="sobre">Sobre</a></li>
                 <li class="item-link"><a href="#" class="contato">Contato</a></li>
             </ul>
-            
+
         </nav>
         <button class="nova-tarefa">+ Nova tarefa</button>
 
     </header>
 
     <main class="conteudo-principal">
-        <h2>Organize suas tarefas <br> e aumente sua produtividade</h2>
-        <p>DevTasks é um projeto criado para te ajudar a gerenciar suas <br> tarefas do dia a dia de forma, simples rapida e eficiente</p>
-        <button class="comecar-agora">Começar agora</button>
-        <button class="ver-minhas-tarefas">Ver minhas tarefas</button>
+        <div class="conteudo-superior">
+            <section class="conteudo">
+                <h1>Organize suas tarefas <br> e aumente sua
+                    <span class="destaque">produtividade</span>
+                </h1>
 
-        <div class="informacoes">
-            <span class="badge">100% Gratuito</span>
-            <span class="badge">Sincronizado no seu navegador</span>
-            <span class="badge">Privado e seguro</span>
+                <p>DevTasks é um projeto criado para te ajudar a gerenciar suas <br> tarefas do dia a dia de forma,
+                    simples rapida e eficiente.</p>
+
+                <div class="botao-acao">
+                    <a class="comecar-agora" href="#">Começar agora</a>
+                    <a class="ver-minhas-tarefas" href="#">Ver minhas tarefas</a>
+                </div>
+
+                <div class="informacoes">
+                    <span class="badge">
+                        <img src="/assets/icons/check.png" alt="Icone de check">
+                        100% Gratuito
+                    </span>
+                    <span class="badge">
+                        <img src="/assets/icons/servidor.png" alt="Icone de nuvem">
+                        Sincronizado no seu navegador
+                    </span>
+                    <span class="badge">
+                        <img src="/assets/icons/cadeado.png" alt="Icone de cadeado">
+                        Privado e seguro
+                    </span>
+                </div>
+            </section>
+            <section>
+                <img src="./assets/images/computador-tarefas.jpg" alt="Interface Minhas Tarefas no Laptop">
+            </section>
         </div>
 
-        <img src="./assets/images/computador-tarefas.jpg" alt="Interface Minhas Tarefas no Laptop" width="200 px">
-
-        <h3>Funcionalidades que facilitam seu dia</h3>
-
-        <div class="Funcionalidades">
-            <div>
-                <h4>Organização</h4>
-                <span>Crie, edite e organize suas tarefas de forma intuitiva</span>
+        <div class="conteudo-inferior">
+            <div class="funcionalidades">
+                <h3>Funcionalidades que facilitam seu dia</h3>
+                <div class="funcionalidades-box">
+                    <div class="organizacao">
+                        <section>
+                            <img src="/assets/icons/prancheta.png" alt="Prancheta">
+                        </section>
+                        <section>
+                            <h4>Organização</h4>
+                            <span>Crie, edite e organize suas tarefas de forma intuitiva.</span>
+                        </section>
+                    </div>
+                    <div class="foco">
+                        <section>
+                            <img src="/assets/icons/lente.png" alt="lente de foco">
+                        </section>
+                        <section>
+                            <h4>Foco</h4>
+                            <span>Defina prioridades e mantenha o foco no que realmente importa.</span>
+                        </section>
+                    </div>
+                    <div class="produtividade">
+                        <sectio>
+                            <img src="/assets/icons/grafico.png" alt="grafico de produtividade">
+                        </sectio>
+                        <section>
+                            <h4>Podutividade</h4>
+                            <span>Acompanhe seu progresso e conquiste mais todos os dias.</span>
+                        </section>
+                    </div>
+                    <div class="privacidade">
+                        <sectio>
+                            <img src="/assets/icons/escudo.png" alt="escudo de protecao">
+                        </sectio>
+                        <section>
+                            <h4>Privacidade</h4>
+                            <span>Seus dados ficam apenas no seu navegador.</span>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Foco</h4>
-                <span>Defina prioridades e mantenha o foco no que realmente importa</span>
+
+
+
+            <div class="como-funciona">
+                <h3>Como funciona</h3>
+                <div class="como-funciona-box">
+                    <div class="crie">
+                        <section>
+                            <img src="/assets/icons/lapis-delineador.png" alt="lapis rabiscando">
+                        </section>
+                        <section>
+                            <h4>1. Crie</h4>
+                            <span>Adicione suas tarefas de forma rapida</span>
+                        </section>
+                    </div>
+                    <div class="organize">
+                        <section>
+                            <img src="/assets/icons/barra-de-menu.png" alt="imagem do icone menu">
+                        </section>
+                        <section>
+                            <h4>2. Organize</h4>
+                            <span>Priorize e categorize suas tarefas</span>
+                        </section>
+                    </div>
+                    <div class="execute">
+                        <section>
+                            <img src="/assets/icons/execute.png" alt="alvo com uma flecha no meio">
+                        </section>
+                        <section>
+                            <h4>3. Execute</h4>
+                            <span>Concentre-se ea realize suas atividades</span>
+                        </section>
+                    </div>
+                    <div class="conclua">
+                        <section>
+                            <img src="/assets/icons/visto.png" alt="check">
+                        </section>
+                        <section>
+                            <h4>4. Conclua</h4>
+                            <span>Marque como concluidas e veja seu progresso!</span>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Podutividade</h4>
-                <span>Acompanhe seu progresso e conquiste mais todos os dias</span>
+            <div class="caixa-email">
+                <section class="pronto-para-produtividade">
+                    <img src="/assets/icons/caixa-email.png" alt="caixa de e-mail">
+                    <span>
+                        <h4>Pronto para ser mais produtivo?</h4>
+                        <div>Junte-se ao DevTasks e tranforme sua rotina.</div>
+                    </span>
+                </section>
+                <section class="email-box">
+                    <section class="email">
+                        <label for="campo-email">Seu e-mail:</label>
+                            <input 
+                            type="email" 
+                            id="campo-email" 
+                            name="email" 
+                            placeholder="(opcional)" 
+                            required 
+                            autocomplete="email">
+                    </section>
+                    <button class="quero-comecar" href="#">Quero começar</button>
+                </section>
             </div>
         </div>
-
-        
-        <h3>Como funciona</h3>
-
-            <div class="como">
-                <div>
-                    <h4>1. Crie</h4>
-                    <span>Adicione suas tarefas de forma rapida</span>
-                </div>
-                <div>
-                    <h4>2. Organize</h4>
-                    <span>Priorize e categorize suas tarefas</span>
-                </div>
-                <div>
-                    <h4>3. Execute</h4>
-                    <span>Concentre-se ea realize suas atividades</span>
-                </div>
-            </div>
     </main>
     <footer class="rodape">
-        <span>
-            <h3>DevTasks</h3>
-            <div>Um projeto de estudo para pratica de HTML, CSS e JavaScript com foco em organização e produtividade</div>
+        <span class="dev">
+            <span class="rodape-logo">
+                <img src="/assets/icons/logo-check.png" alt="logo Dev tasks"> 
+                <h3>DevTasks</h3>
+            </span>
+            <div>Um projeto de estudo para pratica de HTML, CSS e JavaScript com foco em organização e produtividade.</div>
+            <span class="plataformas">
+                <img src="/assets/icons/github.png" alt="logo do site github">
+                <img src="/assets/icons/linkedin.png" alt="logo do linkedin">
+                <img src="/assets/icons/o-email.png" alt="simbolo do e-mail">
+            </span>
         </span>
-        <span>
-            <h3>Navegação</h3>
-            <div>Home</div>
-            <div>Tarefas</div>
-            <div>Sobre</div>
-            <div>Contato</div>
+
+        <span class="navegacao">
+            <section>
+                <h3>Navegação</h3>
+            </section>
+            <section>
+                <div>Home</div>
+                <div>Tarefas</div>
+                <div>Sobre</div>
+                <div>Contato</div>
+            </section>
         </span>
-        <span>
+        <span class="recursos">
             <h3>Recursos</h3>
             <div>Funcionalidades</div>
             <div>Como funciona</div>
             <div>FAQ</div>
             <div>Dicas de produtividade</div>
         </span>
-        <span>
+        <span class="legalidade">
             <h3>Legal</h3>
             <div>Privacidade</div>
             <div>Termos de uso</div>
             <div>Licença</div>
         </span>
-        <div>
-            <span>Feito com ❤️ por dois desenvolvedores</span>
-            <div>Ver projeto no GitHub</div>
+        <div class="feito">
+            <section class="feito-com-amor">
+                <span>Feito com ❤️ por dois desenvolvedores</span>
+            </section>
+            <section class="ver-projeto-box">
+                <img src="/assets/icons/github.png" alt="icone do github">
+                <a href="#" class="ver-projeto">Ver projeto no Github →</a>
+            </section>
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,10 +1,13 @@
 @import url("variables.css");
 
+body {
+    background-color: #f5f5ff;
+}
+
 .cabecalho-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #FAFAFA;
     padding: 15px 30px;
     border-radius: 12px;
@@ -61,3 +64,316 @@
     font-size: 0.9rem;
     min-height: 40px;
 }
+
+.conteudo-principal {
+    padding: 16px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.conteudo-superior {
+    background-color: #f5f5ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 28px;
+    
+    img {
+        height: 500px;
+        width: max-content;
+    }
+    
+    
+}
+
+.conteudo {
+    h1, p {
+        padding-bottom: 16px;
+    }
+    .informacoes {
+       padding-top: 16px; 
+    }
+}
+
+.destaque {
+    color: var(--color-primary-500);
+}
+
+h1 {
+    font-size: 3.0rem;
+}
+
+p {
+    font-size: 1.0rem;
+    color: gray;
+}
+
+.botao-acao {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+a {
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.comecar-agora {
+    background-color: var(--color-primary-500);
+    color: white;
+}
+
+.ver-minhas-tarefas {
+    border: 1px solid rgba(0, 0, 0, .08);
+    color: var(--color-primary-500);
+}
+
+.informacoes {
+    display: flex;
+    font-size: 0.8rem;
+    gap: 16px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.badge img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.conteudo-inferior {
+    background-color: white;
+    padding: 20px;
+}
+
+
+.conteudo-principal h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+
+
+.funcionalidades-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.organizacao {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 8px;
+    gap: 8px;
+    padding: 10px;
+    max-width: 350px;
+}
+
+.funcionalidades img {
+    width: 80px;
+}
+
+.foco {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 8px;
+    gap: 8px;
+    padding: 10px;
+    max-width: 350px;
+}
+
+.produtividade {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 8px;
+    gap: 8px;
+    padding: 10px;
+    max-width: 350px;
+}
+
+.privacidade {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 8px;
+    gap: 8px;
+    padding: 10px;
+    max-width: 350px;
+}
+
+.como-funciona-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.crie, .organize, .execute, .conclua {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    max-width: 350px;
+    position: relative;
+}
+
+.crie::after,
+.organize::after,
+.execute::after {
+    content: '';
+    position: absolute;
+    right: -36px;
+    top: 50%;
+    width: 24px;
+    border-top: 2px dashed var(--color-primary-500);
+    transform: translateY(-50%);
+}
+
+.crie::before,
+.organize::before,
+.execute::before {
+    content: '';
+    position: absolute;
+    right: -38px;            
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid var(--color-primary-500);
+    border-right: 2px solid var(--color-primary-500);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.caixa-email {
+    background-color: #f5f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 400px;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.email {
+    display: flex;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.email label {
+    font-size: 0.9rem;
+}
+
+.email input {
+    flex: 1; 
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.875rem;
+    color: #111827;
+}
+
+.quero-comecar {
+    background-color: var(--color-primary-500);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    
+}
+
+.pronto-para-produtividade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary-500);
+}
+
+.rodape {
+    background-color: #01000f;
+    color: white;
+    display: flex;
+    padding: 28px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.rodape-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+.plataformas {
+    display: flex;
+    margin-top: 20px;
+    height: 16px;
+    gap: 12px;
+}
+
+.feito {
+    background-color: rgb(3, 2, 27);
+    border-radius: 8px;
+    max-width: 300px;
+    max-height: 140px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.feito-com-amor {
+    border-bottom: 1px solid gray;
+}
+.ver-projeto-box {
+    display: flex;
+    align-items: center;
+}
+
+.ver-projeto {
+    margin-top: 8px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    gap: 8px;
+    text-decoration: none;
+}
+
+
+
+.dev, .navegacao, .recursos, .legalidade {
+    padding: 20px;
+    max-width: 300px;
+}
+
+.rodape-logo, .navegacao h3, .recursos h3, .legalidade h3 {
+    margin-bottom: 16px;
+}
+
