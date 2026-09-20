@@ -89,8 +89,9 @@ function adicionarTag(tag) {
 
 
     // Remover tag
-    removeTag(tag)
-
+    botaoRemover.addEventListener("click", () => {
+        removeTag(tag, tagElemento)
+    })
     // Monta a tag
     tagElemento.appendChild(tagTexto)
     tagElemento.appendChild(botaoRemover)
@@ -100,18 +101,15 @@ function adicionarTag(tag) {
     tagsSelecionadasContainer.appendChild(tagElemento)
 }
 
-function removeTag(tag) {
-        // Remover tag
-    botaoRemover.addEventListener("click", () => {
+function removeTag(tag, tagElemento) {
+    // Remover tag
+    const indice = tagsSelecionadas.indexOf(tag)
 
-        const indice = tagsSelecionadas.indexOf(tag)
+    if (indice !== -1) {
+        tagsSelecionadas.splice(indice, 1)
+    }
 
-        if (indice !== -1) {
-            tagsSelecionadas.splice(indice, 1)
-        }
-
-        tagElemento.remove()
-    })
+    tagElemento.remove()
 }
 
 // BUSCAR TAGS
@@ -185,9 +183,7 @@ inputTags.addEventListener("input", () => {
 
         opcaoCriar.textContent = `+ Criar "${textoDigitado}"`
 
-
-        opcaoCriar.addEventListener("click", () => {
-
+        function adicionarNovaTag() {
             // Adiciona a nova tag às tags cadastradas
             tagsCadastradas.push(textoDigitado)
 
@@ -199,6 +195,21 @@ inputTags.addEventListener("input", () => {
 
             // Fecha as sugestões
             sugestoesTags.innerHTML = ""
+        }
+
+
+        opcaoCriar.addEventListener("click", () => {
+            adicionarNovaTag()
+        })
+
+        opcaoCriar.addEventListener("keydown", (event) => {
+
+            if (event.key === "Enter") {
+                adicionarNovaTag()
+            }
+            if (event.key !== "Enter") {
+                return
+            }
         })
 
 
