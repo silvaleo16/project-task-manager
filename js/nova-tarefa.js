@@ -3,6 +3,7 @@ const form = document.querySelector('#formulario-nova-tarefa')
 const inputTitulo = document.querySelector("#titulo-da-tarefa")
 const textarea = document.getElementById("descricao")
 const contador = document.getElementById("contador")
+const alertaLimite = document.getElementById("alerta-limite")
 const inputData = document.getElementById("data-tarefa")
 //elementos da tag
 const inputTags = document.querySelector("#tags")
@@ -17,7 +18,23 @@ inputData.min = hoje
 
 //ação de contar caracteres do textarea
 textarea.addEventListener("input", () => {
-    contador.textContent = `${textarea.value.length}/${textarea.maxLength}`
+
+    const quantidadeCaracteres = textarea.value.length
+    const limiteCaracteres = textarea.maxLength
+    const caracteresRestantes = limiteCaracteres - quantidadeCaracteres
+
+    contador.textContent = `${quantidadeCaracteres}/${limiteCaracteres}`
+
+    if (caracteresRestantes <= 20 && caracteresRestantes >=1) {
+        alertaLimite.textContent =
+            `Restam ${caracteresRestantes} caracteres`
+    }
+    else if (textarea.value.length == 500) {
+        alertaLimite.textContent = `Você atingiu a quantidade de caracteres`
+    }
+    else {
+        alertaLimite.textContent = ""
+    }
 })
 
 
