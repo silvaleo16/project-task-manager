@@ -89,17 +89,7 @@ function adicionarTag(tag) {
 
 
     // Remover tag
-    botaoRemover.addEventListener("click", () => {
-
-        const indice = tagsSelecionadas.indexOf(tag)
-
-        if (indice !== -1) {
-            tagsSelecionadas.splice(indice, 1)
-        }
-
-        tagElemento.remove()
-    })
-
+    removeTag(tag)
 
     // Monta a tag
     tagElemento.appendChild(tagTexto)
@@ -110,7 +100,19 @@ function adicionarTag(tag) {
     tagsSelecionadasContainer.appendChild(tagElemento)
 }
 
+function removeTag(tag) {
+        // Remover tag
+    botaoRemover.addEventListener("click", () => {
 
+        const indice = tagsSelecionadas.indexOf(tag)
+
+        if (indice !== -1) {
+            tagsSelecionadas.splice(indice, 1)
+        }
+
+        tagElemento.remove()
+    })
+}
 
 // BUSCAR TAGS
 
