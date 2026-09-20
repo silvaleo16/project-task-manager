@@ -39,6 +39,11 @@ textarea {
   padding: 2px 4px;
 }
 
+#alerta-limite {
+    display: flex;
+    color: #d62626;
+}
+
 fieldset,
 input,
 select {
