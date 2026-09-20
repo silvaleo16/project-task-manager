@@ -148,3 +148,46 @@ h4 {
     color: #3E24E7;
     font-weight: 600;
 }
+
+/* error */
+.mensagem-erro{
+    color: #d62626;
+    font-size: 12px;
+    margin-top: 14px;
+    max-width: 200px;
+}
+
+/*tags */
+.tags-selecionadas {
+    font-size: 8px;
+    display: flex;
+    gap: 14px;
+    padding: 4px;
+    
+    .tag {
+        background-color: #E2E1FD;
+        border: 1px solid #cdcdcd;
+        padding: 4px;
+        border-radius: 8px;
+    }
+
+    button {
+        margin-left: 4px;
+        font-size: 8px;
+        padding: 4px;
+        border: 1px solid #cdcdcd;
+        border-radius: 4px;
+        background-color: #E2E1FD;
+    }
+}
+
+.sugestoes-tags:not(:empty) {
+    padding: 8px;
+    margin-top: 2px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    div {
+        margin-top: 8px;
+    }
+
+}
