@@ -183,7 +183,7 @@ inputTags.addEventListener("input", () => {
 
         opcaoCriar.textContent = `+ Criar "${textoDigitado}"`
 
-        function adicionarNovaTag() {
+        opcaoCriar.addEventListener("click", () => {
             // Adiciona a nova tag às tags cadastradas
             tagsCadastradas.push(textoDigitado)
 
@@ -195,23 +195,7 @@ inputTags.addEventListener("input", () => {
 
             // Fecha as sugestões
             sugestoesTags.innerHTML = ""
-        }
-
-
-        opcaoCriar.addEventListener("click", () => {
-            adicionarNovaTag()
         })
-
-        opcaoCriar.addEventListener("keydown", (event) => {
-
-            if (event.key === "Enter") {
-                adicionarNovaTag()
-            }
-            if (event.key !== "Enter") {
-                return
-            }
-        })
-
 
         sugestoesTags.appendChild(opcaoCriar)
     }
