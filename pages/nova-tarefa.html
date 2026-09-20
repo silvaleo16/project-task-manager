@@ -41,12 +41,13 @@
                     </div>
                     <img src="../assets/images/prancheta.png" alt="" height="156px" width="250px" />
                 </div>
-                <form class="formulario-nova-tarefa" id="formulario-nova-tarefa">
+                <form class="formulario-nova-tarefa" id="formulario-nova-tarefa" novalidate>
                     <h2 class="titulo-principal-form">Informações da tarefa</h2>
                     <fieldset>
                         <label for="titulo-da-tarefa">Titulo da tarefa</label>
                         <input type="text" name="titulo-da-tarefa" id="titulo-da-tarefa"
                             placeholder="Ex.: Estudar JavaScript" required>
+                        <span class="mensagem-erro"></span>
                     </fieldset>
                     <fieldset>
                         <label for="descricao">Descrição</label>
@@ -75,6 +76,7 @@
                         <fieldset>
                             <label for="data-tarefa">Data de vencimento</label>
                             <input type="date" name="data-tarefa" id="data-tarefa" required>
+                            <span class="mensagem-erro"></span>
                         </fieldset>
                         <fieldset>
                             <label for="tempo-estimado">Tempo estimado (opcional)</label>
@@ -82,9 +84,14 @@
                         </fieldset>
                     </div>
                     <fieldset>
-                        <label for="tag-tarefa">Tags (opcional)</label>
-                        <input type="text" name="tag-tarefa" id="tag-tarefa"
-                            placeholder="digite e precione Enter para adicionar">
+                        <label for="tags">Tags (opcional)</label>
+                        <div class="tags-input">
+                            <div class="tags-selecionadas"></div>
+
+                            <input type="text" name="tag-tarefa" id="tags"
+                                placeholder="digite e precione Enter para adicionar">
+                        </div>
+                        <div class="sugestoes-tags"></div>
                     </fieldset>
                     <span>Use tags para organizar e econtrar suas tarefas com mais facilidade</span>
                 </form>
