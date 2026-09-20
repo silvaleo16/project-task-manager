@@ -1,0 +1,60 @@
+.rodape {
+    background-color: #01000f;
+    color: white;
+    display: flex;
+    padding: 28px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.rodape-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+.plataformas {
+    display: flex;
+    margin-top: 20px;
+    height: 16px;
+    gap: 12px;
+}
+
+.feito {
+    background-color: rgb(3, 2, 27);
+    border-radius: 8px;
+    max-width: 300px;
+    max-height: 140px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.feito-com-amor {
+    border-bottom: 1px solid gray;
+}
+.ver-projeto-box {
+    display: flex;
+    align-items: center;
+}
+
+.ver-projeto {
+    margin-top: 8px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    gap: 8px;
+    text-decoration: none;
+}
+
+
+
+.dev, .navegacao, .recursos, .legalidade {
+    padding: 20px;
+    max-width: 300px;
+}
+
+.rodape-logo, .navegacao h3, .recursos h3, .legalidade h3 {
+    margin-bottom: 16px;
+}
